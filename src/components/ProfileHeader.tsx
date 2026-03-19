@@ -136,34 +136,6 @@ export default function ProfileHeader({
           </Tooltip>
           <Tooltip
             content={
-              <Image
-                width={1206}
-                height={1220}
-                src="/twitter.png"
-                alt="Twitter"
-                className="rounded-sm max-w-full h-auto"
-                unoptimized
-              />
-            }
-          >
-            
-          </Tooltip>
-          <Tooltip
-            content={
-              <Image
-                width={1596}
-                height={1108}
-                src="/linkedin.png"
-                alt="LinkedIn"
-                className="rounded-sm max-w-full h-auto"
-                unoptimized
-              />
-            }
-          >
-            
-          </Tooltip>
-          <Tooltip
-            content={
               <div className="w-[300px] sm:w-[340px]">
                 <div className="rounded-2xl border border-neutral-200 bg-white px-4 py-3 dark:border-neutral-800 dark:bg-neutral-900">
                   <div className="flex items-center gap-3">
