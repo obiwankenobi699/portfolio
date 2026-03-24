@@ -25,14 +25,14 @@ const allProjectsData: Project[] = [
   },
   {
     id: "vakeel-ai",
-    title: "Vakeel AI",
+    title: "V2-JEPA",
     description: "AI‑driven legal research with NLP intent detection and semantic search.",
-    longDescription:
-      "Processes 5.2 crore+ pending cases so lawyers and citizens can query Supreme, High, and District Court judgments.\n\nDelivers intelligent legal drafting and case summarization using Gemini API, reducing documentation time by ~70%; scaled to 50+ active users.",
+    longDescription:"JEPA v2 (Joint Embedding Predictive Architecture) learns high-level visual representations by predicting abstract features instead of pixels, making it robust for perception tasks.Combined with Moondream LLM, it enables efficient vision-language reasoning, where structured visual embeddings are interpreted and described in natural language.",
+
     liveLink: "https://vakeel-ai.example.com",
-    githubLink: "https://github.com/obiwankenobi699/vakeel-ai",
+    githubLink: "https://github.com/obiwankenobi699/vjepa2",
     video: "",
-    image: "/vakeelai.png",
+    image: "/Meta.png",
     tweetUrl: "",
     tags: [
       "Next.js",

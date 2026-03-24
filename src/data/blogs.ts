@@ -2,6 +2,210 @@ import { BlogPost } from '@/types/blog'
 
 export const blogs: BlogPost[] = [
   {
+    id: 'about-me-journey',
+    title: 'Building While Learning: My Journey in AI and Development',
+    readTime: '6 min read',
+    externalUrl: '',
+    author: 'Obiwankenobi699',
+    date: '2026-03-22',
+    image: '/mag4.jpg',
+    tags: ['Journey', 'Learning', 'Hackathons', 'Growth'],
+    content: `I am a Computer Science student building across AI, systems, and full-stack development. My learning has never followed a linear path. It has been shaped by curiosity, frustration, experimentation, and constant rebuilding.
+
+This is not a story of knowing everything. It is a story of figuring things out while building.
+
+---
+
+### How It Started
+
+Like most developers, I started with web development. HTML, CSS, JavaScript — the usual path.
+
+I enjoyed it initially. Building interfaces, deploying projects, seeing things work — it felt productive.
+
+But over time, it started to feel repetitive.
+
+I wanted to understand what happens underneath — how systems work, how models think, how real-world problems are solved.
+
+---
+
+### Enter Linux: A Shift in Mindset
+
+Switching to Linux changed everything.
+
+I eventually moved to Arch Linux with Hyprland. It wasn’t just about aesthetics — it forced me to understand my system deeply.
+
+- configuring everything manually  
+- debugging without shortcuts  
+- controlling the environment instead of relying on it  
+
+Linux made me more comfortable with complexity and uncertainty.
+
+---
+
+### From Web Dev to Something Deeper
+
+At some point, I lost interest in traditional web development.
+
+Not because it’s bad — but because I wanted depth.
+
+I didn’t want to build just for the sake of building.
+
+I wanted to work on problems that required reasoning, systems thinking, and integration across domains.
+
+That’s when I moved towards AI and Machine Learning.
+
+---
+
+### Learning Machine Learning the Practical Way
+
+I didn’t start with heavy theory. I started with building.
+
+- training models  
+- testing datasets  
+- deploying small systems  
+
+This helped me understand failure cases, performance issues, and real-world constraints.
+
+Over time I explored:
+- Computer Vision  
+- Vision-language models  
+- real-time inference systems  
+
+The process stayed the same:  
+**build → break → fix → understand**
+
+---
+
+### The Part I Avoided: DSA
+
+For a long time, I avoided Data Structures and Algorithms.
+
+It felt abstract and disconnected from what I was building.
+
+I didn’t enjoy it.
+
+But as I started building larger systems, I began to notice inefficiencies:
+- slow operations  
+- poor structuring  
+- unnecessary complexity  
+
+That’s where DSA started making sense.
+
+Not as theory, but as a tool.
+
+I still don’t love grinding problems, but I now use DSA where it matters — in writing better, more efficient systems.
+
+---
+
+### GPU, Performance and Real Constraints
+
+Machine Learning introduced real constraints:
+
+- GPU limits  
+- memory bottlenecks  
+- latency issues  
+
+I started working with:
+- CUDA setups  
+- model optimization  
+- efficient pipelines  
+
+This changed how I think about systems — performance became critical.
+
+---
+
+### Cloud, Docker and DevOps Thinking
+
+As projects grew, I moved into:
+
+- Docker for reproducibility  
+- cloud deployments  
+- CI/CD pipelines  
+
+This is where everything connected:
+AI models + backend systems + infrastructure
+
+It stopped being separate skills and became a complete system.
+
+---
+
+### Hackathons and Real-World Pressure
+
+Hackathons shaped my mindset a lot.
+
+Winning HackJNU and participating in competitions like SIH taught me:
+
+- speed matters  
+- execution matters  
+- clarity matters  
+
+You don’t remember everything. You adapt.
+
+> You don’t need to know everything. You need to figure things out quickly.
+
+---
+
+### The Real Challenge: Too Many Things at Once
+
+The hardest part is not difficulty — it’s overload.
+
+There are too many:
+- tools  
+- frameworks  
+- concepts  
+
+Trying to remember everything doesn’t work.
+
+What helped me:
+- focusing on fundamentals  
+- recognizing patterns  
+- learning by building  
+
+---
+
+### Where I Am Still Improving
+
+I am still not perfect at coding.
+
+There are gaps:
+- I sometimes struggle with complex implementations  
+- I lack deep experience compared to others  
+
+But I am consistent.
+
+I try to:
+- build regularly  
+- debug deeply  
+- improve step by step  
+
+Instead of aiming for perfection, I focus on progress.
+
+---
+
+### Where I Stand Now
+
+I don’t define myself by a single stack.
+
+I work across:
+- AI / ML  
+- full-stack systems  
+- DevOps and cloud  
+
+Not separately, but as one system.
+
+---
+
+### Final Thought
+
+I don’t build for the sake of building anymore.
+
+I build to understand.
+
+And every project is just another step in figuring out how systems, models, and ideas come together.
+`
+  },
+
+  {
     id: 'hawkwatch-build-log',
     title: 'HawkWatch: Revolutionizing Security with AI-Powered Real-Time Surveillance',
     readTime: '8 min read',
@@ -9,49 +213,14 @@ export const blogs: BlogPost[] = [
     author: 'Obiwankenobi699',
     date: '2026-01-15',
     image: '/mag1.jpg',
-    tags: ['HawkWatch', 'Gemini 1.5 Flash', 'Video Surveillance', 'TensorFlow.js', 'Computer Vision'],
-    content: `Welcome to this week’s deep dive into the rapidly evolving world of security technology. If you’ve ever wondered how artificial intelligence is reshaping surveillance and transforming static camera feeds into intelligent, proactive guardians, you’re in for a treat. Today, we explore HawkWatch, a cutting-edge AI surveillance system that promises to raise the bar for real-time threat detection, making our public and private spaces safer, smarter, and far more responsive.
+    tags: ['HawkWatch', 'Gemini 1.5 Flash', 'Computer Vision'],
+    content: `HawkWatch transforms passive CCTV into an intelligent system using AI-driven real-time analysis. It combines local CV models with cloud-based vision-language reasoning to detect threats instantly.
 
-Let’s face it: traditional surveillance systems have long been the silent watchers, recording hours of footage only to be reviewed after incidents happen. The manual monitoring is tedious, prone to human error, and often too slow for urgent response. HawkWatch changes the game by combining powerful AI, cloud-driven vision-language models, and smart local processing to alert security teams in near real-time about threats ranging from theft to medical emergencies.
+The system uses hybrid processing to balance latency and accuracy, achieving fast response times while minimizing false positives.
 
-**The Core of HawkWatch: Intelligence Meets Vigilance**
-
-At its heart, HawkWatch is designed to convert passive video recording into an active, intelligent monitoring platform. Using Google’s Gemini 1.5 Flash Vision Language Model along with TensorFlow.js on the client side, it performs detailed frame-by-frame analysis to detect a spectrum of threats, whether it’s criminal acts like robbery and vandalism, medical crises such as seizures or unconsciousness, safety events like falls, or even subtle signs of loitering that could indicate potential security breaches.
-
-This hybrid approach, where lightweight computer vision models run locally to catch obvious events, and complex AI models in the cloud provide nuanced semantic understanding, strikes a smart balance. It delivers rapid alerts with impressive accuracy (94.2%) while keeping false positives under 4%, addressing one of the biggest headaches in automated surveillance: alert fatigue.
-
-**Why Traditional Surveillance is Falling Behind**
-
-The challenges facing security teams are brutally simple. Constantly watching multiple feeds wears down even the most vigilant guards, studies suggest attention drops after 20-30 minutes. Plus, scaling up means exponentially more personnel and cost. On top of that, vast video archives are cumbersome to manage, relying on time-consuming manual review when something goes wrong.
-
-In contrast, HawkWatch brings instant detection to the forefront. Its system automatically identifies threats and notifies responders immediately, not after the fact. It even supplies rich metadata, contextualizing the kind of threat and severity, while respecting privacy regulations through automated de-identification.
-
-**A Peek Under the Hood: How HawkWatch Works**
-
-The system architecture is elegant yet powerful. It captures video frames at a steady rate, applies motion detection to ignore irrelevant footage, and then analyzes suspicious frames locally using fast models like YOLOv8 and PoseNet. For borderline cases, frames are sent to Google’s Gemini VLM in the cloud, where deeper reasoning about the scene’s content happens.
-
-Alerts are generated only when the combined confidence score surpasses a threshold, ensuring security personnel aren’t bombarded with false alarms. A sleek dashboard lets teams oversee multiple camera feeds simultaneously, review event timelines, and access historical trend analytics. To top it off, HawkWatch includes an AI chat assistant that helps guide security staff through emergencies with context-aware advice.
-
-**Scalability and Results That Impress**
-
-Testing shows HawkWatch can handle up to 10 camera feeds on a single server without a dip in performance. Its median latency for threat detection clocks in at a remarkable 78ms (local processing), with a maximum of around 700ms including VLM cloud calls, fast enough to make a real difference in emergency response times.
-
-Usability trials with actual security teams were promising: nearly 92% of alerts were deemed relevant, and users found the dashboard intuitive and responsive. Plus, HawkWatch’s cost-effectiveness makes it a compelling option against pricier commercial systems that often lack nuanced AI integration.
-
-**Looking Ahead: The Future of Intelligent Surveillance**
-
-The HawkWatch roadmap brims with exciting advancements. Plans include multi-camera person tracking, behavioral anomaly detection using advanced recurrent neural networks, mobile apps for security personnel on the move, and tighter privacy protections with end-to-end encryption. Further down the line, integration with IoT devices to automate door locking or alarm activation, plus explainable AI features to clarify why an alert was triggered, could redefine trust in automated security.
-
-Imagine retail stores seeing significant inventory loss reduction, hospitals catching falls before they worsen, and public venues managing crowd safety with ease, all powered by systems like HawkWatch. This democratization of high-tech safety could be a game changer for small to medium enterprises, public infrastructure, and healthcare providers alike.
-
-**Final Thoughts**
-
-Security systems are no longer just about watching, they’re about understanding, anticipating, and acting quickly. HawkWatch exemplifies how AI can elevate surveillance from a passive watcher to an active guardian. It’s a remarkable convergence of cutting-edge AI research, practical engineering, and thoughtful design choices focused on real human needs.
-
-Thank you for joining me in exploring this fascinating leap forward. Stay tuned for next week’s post where we’ll delve into the ethical considerations and privacy challenges of AI surveillance, and how innovators are striving to balance safety with personal freedom.
-
-Until next time, keep curious and safe!`
+This reflects my interest in building real-world AI systems.`
   },
+
   {
     id: 'vakeel-ai-case-research-engine',
     title: 'Inside Vakeel AI: Building Legal Search for 5.2 Crore+ Cases',
@@ -60,41 +229,26 @@ Until next time, keep curious and safe!`
     author: 'Obiwankenobi699',
     date: '2025-12-10',
     image: '/mag2.jpg',
-    tags: ['Vakeel AI', 'LegalTech', 'NLP', 'Semantic Search', 'Gemini'],
-    content: [
-      'Vakeel AI was designed to make legal research faster for lawyers and citizens by turning complex case repositories into queryable answers.',
-      '',
-      'Core system choices:',
-      '',
-      '- NLP intent routing for legal-domain queries',
-      '- Semantic retrieval and ranking over Supreme, High, and District Court judgments',
-      '- AI-assisted drafting and summarization with Gemini-powered workflows',
-      '- Product architecture scaled for 50+ active users with consistent response quality',
-      '',
-      'This reduced legal documentation time by roughly 70% while keeping answers grounded in case context.'
-    ].join('\n')
+    tags: ['LegalTech', 'NLP', 'Semantic Search'],
+    content: `Vakeel AI simplifies legal research using semantic retrieval and AI-based summarization.
+
+It focuses on turning large datasets into structured, usable insights efficiently.`
   },
+
   {
-    id: 'curslate-performance-journey',
-    title: 'CurSlate Performance Journey: 40% Faster Browser Translation',
+    id: 'jepa-moondream',
+    title: 'JEPA v2 + Moondream: Efficient Vision-Language Reasoning',
     readTime: '3 min read',
     externalUrl: '',
     author: 'Obiwankenobi699',
-    date: '2026-02-01',
+    date: '2026-03-20',
     image: '/mag3.jpg',
-    tags: ['CurSlate', 'Chrome Extension', 'JavaScript', 'Babel', 'Performance'],
-    content: [
-      'CurSlate focused on one clear metric: deliver accurate translation previews fast enough to feel instant inside browsing flows.',
-      '',
-      'Optimization work that mattered most:',
-      '',
-      '- Modular extension architecture for predictable runtime behavior',
-      '- Translation pipeline optimization to hit <300ms processing in common paths',
-      '- Auto language detection and responsive preview rendering near 0.2s',
-      '- Power-user controls for hover timing and keyboard-driven workflows',
-      '',
-      'Result: a smoother in-browser translation experience with about 40% faster performance than earlier builds.'
-    ].join('\n')
+    tags: ['JEPA', 'Moondream', 'Vision AI'],
+    content: `JEPA v2 learns abstract representations instead of reconstructing pixels, making it efficient for perception.
+
+Combined with Moondream, it enables lightweight vision-language reasoning suitable for real-time systems.
+
+This approach focuses more on understanding than reconstruction.`
   }
 ]
 
