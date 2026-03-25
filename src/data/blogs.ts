@@ -206,7 +206,7 @@ And every project is just another step in figuring out how systems, models, and 
   },
 
   {
-    id: 'hawkwatch-build-log',
+    id: 'View-AI-build-log',
     title: 'HawkWatch: Revolutionizing Security with AI-Powered Real-Time Surveillance',
     readTime: '8 min read',
     externalUrl: '',
