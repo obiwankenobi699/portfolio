@@ -283,7 +283,7 @@ function Card({ blog, idx, onClick }: { blog: BlogPost; idx: number; onClick(): 
       <ImgBox src={blog.image} alt={blog.title} n={idx + 1} />
       <div className="card-body">
         <div className="card-meta">
-          <span>{fmtDate(blog.date)}</span>
+          <span>{fmtDate(blog.date || '')}</span>
           <span className="mdot" />
           <span>{blog.readTime}</span>
           <span className="mdot" />
@@ -447,10 +447,10 @@ function Reader({ blog, onClose }: { blog: BlogPost & { sectionImages?: string[]
 
       {blog.image ? (
         <div className="r-hero">
-          <img src={blog.image} alt={blog.title} />
+          <img src={blog.image || ''} alt={blog.title} />
           <div className="r-hero-grad" />
           <div className="r-hero-info">
-            <div className="r-hero-eye">{blog.tags?.[0]} · {fmtDate(blog.date)}</div>
+            <div className="r-hero-eye">{blog.tags?.[0] || ''} · {fmtDate(blog.date || '')}</div>
             <h1 className="r-hero-h1">{blog.title}</h1>
           </div>
         </div>
@@ -459,7 +459,7 @@ function Reader({ blog, onClose }: { blog: BlogPost & { sectionImages?: string[]
           <div className="r-hero-blank-bg">01</div>
           <div style={{fontSize:'.58rem',letterSpacing:'.25em',textTransform:'uppercase',color:'var(--gold)',marginBottom:'1rem',display:'flex',alignItems:'center',gap:'.7rem'}}>
             <span style={{display:'inline-block',width:'2rem',height:'1px',background:'var(--gold)'}} />
-            {blog.tags?.[0]} · {fmtDate(blog.date)}
+            {blog.tags?.[0] || ''} · {fmtDate(blog.date || '')}
           </div>
           <h1 style={{fontFamily:'var(--serif)',fontSize:'clamp(2.2rem,5vw,4rem)',fontWeight:700,lineHeight:1.05,color:'var(--cream)'}}>
             {blog.title}
@@ -471,13 +471,13 @@ function Reader({ blog, onClose }: { blog: BlogPost & { sectionImages?: string[]
         <div className="r-meta">
           <span className="r-author">{blog.author}</span>
           <span className="r-sep">·</span>
-          <span>{fmtDate(blog.date)}</span>
+          <span>{fmtDate(blog.date || '')}</span>
           <span className="r-sep">·</span>
           <span>{blog.readTime}</span>
           <span className="r-sep">·</span>
           {blog.tags?.map(t => <span key={t}>#{t}</span>)}
         </div>
-        <Prose content={blog.content} sectionImages={blog.sectionImages} />
+        <Prose content={blog.content} sectionImages={blog.sectionImages || []} />
       </div>
     </div>
   )
