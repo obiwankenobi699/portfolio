@@ -21,6 +21,7 @@ import NeumorphButton from './NeumorphButton'
 import BlogMagazineCarousel from './BlogMagazineCarousel'
 import FooterCredits from './FooterCredits'
 import TechStackPills from './TechStackPills'
+import { VaultSection } from '@/components/VaultSection'
 
 export default function NewHeroSection() {
   return (
@@ -196,7 +197,8 @@ export default function NewHeroSection() {
 
               {/* Footer Credits */}
               <Reveal delay={0.1}>
-                <FooterCredits />
+                <VaultSection />
+      <FooterCredits />
               </Reveal>
             </div>
           </div>
