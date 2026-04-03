@@ -31,7 +31,7 @@ export const blogs: BlogPost[] = [
     readTime: '6 min read',
     externalUrl: '',
     author: 'Obiwankenobi699',
-    date: '2026-03-22',
+    date: '2026-04-20',
     image: '/mag4.jpg',
     // ↓ Add section images here — one path per ### heading, in order
     sectionImages: [
@@ -139,6 +139,7 @@ I do not define myself by a single stack or domain.
 
 AI and ML. Full-stack systems. Infrastructure. Not parallel tracks — one system I am learning to see more completely, one build at a time.
 `
+
   },
 
   {
@@ -147,7 +148,7 @@ AI and ML. Full-stack systems. Infrastructure. Not parallel tracks — one syste
     readTime: '7 min read',
     externalUrl: '',
     author: 'Obiwankenobi699',
-    date: '2026-03-20',
+    date: '2026-03-30',
     image: '/win.jpg',
     sectionImages: [
       '',   // ### We Read a Research Paper. Most Teams Did Not.
@@ -368,7 +369,7 @@ Vakeel AI is where I stopped treating retrieval as an implementation detail and 
     readTime: '3 min read',
     externalUrl: '',
     author: 'Obiwankenobi699',
-    date: '2026-03-20',
+    date: '2026-02-25',
     image: '/jepa.png',
     sectionImages: [
       '',   // ### Predicting in Latent Space, Not Pixel Space
@@ -407,8 +408,95 @@ The combination gives you meaningful visual reasoning and natural language descr
 
 This is the direction I find most interesting in applied ML: not bigger models, but smarter composition of smaller, specialised ones. Less is more, when you know what each component is actually for.
 `
-  }
+  },
+{
+  id: 'balance-college-code-life',
+  title: 'The Weight of the Backpack: Code, College, and Everything Else',
+  readTime: '5 min read',
+  externalUrl: '',
+  author: 'Obiwankenobi699',
+  date: '2026-03-21',
+  image: './Christ.jpg',
+  sectionImages: [
+    '',   // ### The Confidence Problem Nobody Talks About
+    '',   // ### What the Whiteboard Does Not Show
+    '',   // ### Friends, or the Lack of Them
+    '',   // ### The Academics Trap
+    '',   // ### What I Am Still Figuring Out
+  ],
+  tags: ['College', 'Life', 'Balance', 'Honest'],
+  content: `There is a photo of me at a suicide prevention awareness booth on campus. I am bent over a whiteboard, writing something. I do not remember what I wrote. I remember how I felt standing there — like someone who had been holding a lot in for a long time.
+
+This is not a post about mental health in a clinical sense. It is about what nobody tells you when you are a CS student trying to build things, pass exams, make friends, and figure out who you are — all at the same time.
+
+---
+
+### The Confidence Problem Nobody Talks About
+
+There is a version of coding that looks clean from the outside. You open a terminal. You type. Things work. You ship.
+
+That is not what it actually looks like.
+
+What it actually looks like is staring at an error for two hours that turns out to be a missing semicolon. It is opening someone else's GitHub and feeling like you are years behind. It is building something you are proud of and then watching a fifteen-year-old on Twitter casually describe something ten times more sophisticated.
+
+The confidence problem is not that you are bad at this. It is that the feedback loop is brutal and the comparison pool is infinite. You are not comparing yourself to the people in your class. You are comparing yourself to everyone who has ever posted code on the internet.
+
+That is a war you cannot win. And most days, you do not even notice you are fighting it.
+
+---
+
+### What the Whiteboard Does Not Show
+
+I stood at that booth and wrote something about asking for help. It felt slightly performative to write it — the way awareness campaigns sometimes do. But I meant it.
+
+Because the honest truth is that coding, when it is going badly, feels deeply personal. You wrote the logic. You made the decision. The bug is yours. The failure is yours. And when you are already running on four hours of sleep and a deadline and a lab submission due Thursday, that weight compounds fast.
+
+Nobody teaches you what to do when the IDE is open and nothing is coming. When you sit there and the cursor blinks and you have nothing. That is not in any tutorial. That is just the part you have to survive until it passes.
+
+---
+
+### Friends, or the Lack of Them
+
+College is supposed to be where you make the friends you keep for life. That is what everyone says.
+
+What they do not say is that making real friends when you are deep in a project at 2 AM, or skipping the hang because you have a deployment to finish, or mentally somewhere else entirely during conversations — that is genuinely hard.
+
+I am not someone who finds people exhausting. I actually like being around people. But there is a version of this life where you blink and six months have passed and your closest relationships are with people on Discord you have never met in person.
+
+That is not a tragedy. But it is something worth noticing.
+
+The people worth keeping are the ones who do not make you explain why you care so much about something they do not understand. They just accept that you do. Find those people. Keep them.
+
+---
+
+### The Academics Trap
+
+Here is the uncomfortable thing about being a CS student who builds real things: the curriculum often feels like a detour.
+
+Data structures taught in a way that is completely disconnected from any real system. Theory papers that test memorisation more than understanding. Exams that reward who studied the question bank, not who actually learned the subject.
+
+And you have a choice, constantly: do the thing that gets the grade, or do the thing that makes you better.
+
+Most of the time you try to do both and end up doing neither particularly well. That is the trap. The academics are not useless — some of it clicks later, in ways you did not expect. But the pressure to perform in a system that does not always reward what you are actually trying to build is real. Pretending otherwise does not help anyone.
+
+---
+
+### What I Am Still Figuring Out
+
+I do not have a clean resolution here. I do not have the balance figured out.
+
+Some weeks the code is good and the grades are fine and I see my friends and I feel like a person. Other weeks I am just surviving — submitting things I am not proud of, cancelling plans, running on momentum and caffeine.
+
+What I have learned is that the whiteboard matters. Not the awareness campaign — the actual question of what you need and who you can ask. That is worth spending time on, even when the deadline is tomorrow.
+
+You are not behind. You are not failing. You are doing something hard, badly sometimes, well sometimes, and that is what it looks like to actually do it.
+
+Keep going.
+`,
+},
 ]
+
+
 
 export const getBlogById = (id: string): BlogPost | undefined => {
   return blogs.find(blog => blog.id === id)
