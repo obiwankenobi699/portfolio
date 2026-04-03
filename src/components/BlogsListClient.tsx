@@ -280,7 +280,7 @@ function Card({ blog, idx, onClick }: { blog: BlogPost; idx: number; onClick(): 
     >
       <span className="card-num">{String(idx + 1).padStart(2,'0')}</span>
       {blog.tags?.[0] && <span className="card-badge">{blog.tags[0]}</span>}
-      <ImgBox src={blog.image} alt={blog.title} n={idx + 1} />
+      <ImgBox src={blog.image || ''} alt={blog.title} n={idx + 1} />
       <div className="card-body">
         <div className="card-meta">
           <span>{fmtDate(blog.date || '')}</span>
